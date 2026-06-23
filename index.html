@@ -62,8 +62,9 @@ align-items:center;
 text-align:center;
 padding:100px 20px;
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600');
+linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85)),
+url('adesivos-vinil.jpg');
+
 background-size:cover;
 background-position:center;
 }
@@ -168,9 +169,26 @@ border-radius:50%;
 font-size:24px;
 text-decoration:none;
 }
+  .estatisticas{
+display:flex;
+gap:50px;
+margin-top:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.estatisticas h2{
+color:#c67cff;
+font-size:2rem;
+}
+
+.estatisticas p{
+margin-top:5px;
+color:#fff;
+}
 .card img{
 width:100%;
-height:280px;
+height:220px;
 object-fit:cover;
 border-radius:10px;
 margin-bottom:15px;
@@ -183,6 +201,29 @@ text-align:center;
 margin-top:15px;
 padding:12px;
 font-size:14px;
+}
+  @media (max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero img{
+width:180px;
+}
+
+nav{
+display:none;
+}
+
+.estatisticas{
+gap:25px;
+}
+
+.estatisticas h2{
+font-size:1.5rem;
+}
+
 }
 </style>
 </head>
@@ -216,10 +257,28 @@ cartões de visita, brindes personalizados e muito mais.
 </p>
 
 <a class="btn"
-href="https://wa.me/5551991516776">
+href="https://wa.me/5551991516776"
+target="_blank">
 Solicitar Orçamento
 </a>
+<div class="estatisticas">
 
+<div>
+<h2>+30</h2>
+<p>Serviços</p>
+</div>
+
+<div>
+<h2>100%</h2>
+<p>Personalizado</p>
+</div>
+
+<div>
+<h2>10-15</h2>
+<p>Dias Úteis</p>
+</div>
+
+</div>
 </section>
 
 <section id="servicos">
@@ -316,7 +375,8 @@ Instagram:
 <br>
 
 <a class="btn"
-href="https://wa.me/5551991516776">
+href="https://wa.me/5551991516776"
+target="_blank">
 Chamar no WhatsApp
 </a>
 
@@ -328,8 +388,9 @@ Chamar no WhatsApp
 
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/5551991516776">
+<a class="btn"
+href="https://wa.me/5551991516776"
+target="_blank">
 💬
 </a>
 
