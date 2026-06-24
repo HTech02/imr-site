@@ -214,6 +214,26 @@ margin-top:15px;
 padding:12px;
 font-size:14px;
 }
+  .galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+border:1px solid #7b2cff;
+transition:.3s;
+cursor:pointer;
+}
+
+.galeria img:hover{
+transform:scale(1.03);
+box-shadow:0 0 25px rgba(123,44,255,.6);
+}
   @media (max-width:768px){
 
 .hero h1{
@@ -379,6 +399,22 @@ eventos e profissionais que desejam destacar sua marca.
 Atendemos Garibaldi, Bento Gonçalves, Carlos Barbosa,
 Farroupilha e toda a Serra Gaúcha.
 </p>
+
+</section>
+  <section id="galeria">
+
+<h2 class="titulo">Trabalhos Realizados</h2>
+
+<div class="galeria">
+
+<img src="cartao1.jpg" alt="Cartão de Visita">
+<img src="cartao2.jpg" alt="Cartão de Visita">
+<img src="cartao3.jpg" alt="Cartão de Visita">
+<img src="cartao4.jpg" alt="Cartão de Visita">
+<img src="cartao5.jpg" alt="Cartão de Visita">
+<img src="cartao6.jpg" alt="Cartão de Visita">
+
+</div>
 
 </section>
 <section id="contato" class="contato">
