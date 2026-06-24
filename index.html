@@ -119,6 +119,12 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
+.card-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+
 .card{
 background:#ffffff;
 padding:25px;
@@ -130,7 +136,6 @@ display:flex;
 flex-direction:column;
 justify-content:space-between;
 }
-
 .card:hover{
 transform:translateY(-8px);
 box-shadow:0 0 20px rgba(123,44,255,.5);
@@ -335,63 +340,87 @@ Atendimento em todo o Brasil • Arte personalizada • Produção profissional
 <img src="automotivos.jpg" alt="Adesivos Automotivos">
 <h3>Adesivos Automotivos</h3>
 <p>Personalização profissional para carros, motos e veículos comerciais.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Adesivos%20Automotivos">
-Solicitar Orçamento
-</a>
+
 </div>
 
+<a href="#panfletos" class="card-link">
+
 <div class="card">
+
 <img src="panfletos.jpg" alt="Panfletos">
+
 <h3>Panfletos</h3>
-<p>Divulgação profissional para empresas, eventos e promoções.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Panfletos">
-Solicitar Orçamento
-</a>
+
+<p>
+Divulgação profissional para empresas, eventos e promoções.
+</p>
+
 </div>
 
+</a>
+
+<a href="#cartoes" class="card-link">
+
 <div class="card">
+
 <img src="cartoes.jpg" alt="Cartões de Visita">
+
 <h3>Cartões de Visita</h3>
-<p>Impressão colorida com acabamento envernizado.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Cartões%20de%20Visita">
-Solicitar Orçamento
-</a>
+
+<p>
+Impressão colorida com acabamento envernizado.
+</p>
+
 </div>
+
+</a>
+
+<a href="#banners" class="card-link">
 
 <div class="card">
+
 <img src="banners.jpg" alt="Banners">
+
 <h3>Banners Bastão</h3>
-<p>Ideal para promoções, igrejas, eventos e empresas.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Banners">
-Solicitar Orçamento
-</a>
+
+<p>
+Ideal para promoções, igrejas, eventos e empresas.
+</p>
+
 </div>
 
-  <div class="card">
+</a>
+
+ <a href="#canecas" class="card-link">
+
+<div class="card">
 <img src="canecas1.jpg" alt="Canecas Personalizadas">
 <h3>Canecas Personalizadas</h3>
 <p>Canecas exclusivas para presentes, empresas, eventos e divulgação da sua marca.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Canecas%20Personalizadas">
-Solicitar Orçamento
-</a>
+
 </div>
-  
+  </a>
+<a href="#lonas" class="card-link">
+
 <div class="card">
+
 <img src="lonas.jpg" alt="Lonas">
+
 <h3>Lonas com Ilhós</h3>
-<p>Material resistente e acabamento profissional.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Lonas%20com%20Ilhós">
-Solicitar Orçamento
-</a>
+
+<p>
+Material resistente e acabamento profissional.
+</p>
+
 </div>
 
+</a>
 <div class="card">
 <img src="adesivos-vinil.jpg" alt="Adesivos Vinil">
 <h3>Adesivos Vinil</h3>
 <p>Personalizados para empresas, marcas e eventos.</p>
-<a class="btn" href="https://wa.me/5551991516776?text=Olá,%20tenho%20interesse%20em%20Adesivos%20Vinil">
-Solicitar Orçamento
-</a>
+
+  
 </div>
 
 </div>
@@ -424,8 +453,9 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
 
 <h2 class="titulo">Trabalhos Realizados</h2>
 
-<h3 class="subtitulo">Portfólio - Cartões de Visita</h3>
-
+<h3 id="cartoes" class="subtitulo">
+Portfólio - Cartões de Visita
+</h3>
 <div class="galeria">
 
 <img src="cartao1.jpg" alt="">
@@ -437,7 +467,9 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
 
 </div>
 
-<h3 class="subtitulo">Portfólio - Panfletos</h3>
+<h3 id="panfletos" class="subtitulo">
+Portfólio - Panfletos
+</h3>
 
 <div class="galeria">
 
@@ -450,7 +482,9 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
 
 </div>
 
-    <h3 class="subtitulo">Portfólio - Canecas Personalizadas</h3>
+    <h3 id="canecas" class="subtitulo">
+Portfólio - Canecas Personalizadas
+</h3>
 
 <div class="galeria">
 
@@ -462,8 +496,9 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
 <img src="canecas6.jpg" alt="Caneca Personalizada">
 
 </div>
-    <h3 class="subtitulo">Portfólio - Calendários</h3>
-
+    <h3 id="calendarios" class="subtitulo">
+Portfólio - Calendários
+</h3>
 <div class="galeria">
 
 <img src="calendarios1.jpg" alt="Calendário Personalizado">
@@ -475,8 +510,9 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
 
 </div>
 
-<h3 class="subtitulo">Portfólio - Roupas Personalizadas</h3>
-
+<h3 id="roupas" class="subtitulo">
+Portfólio - Roupas Personalizadas
+</h3>
 <div class="galeria">
 
 <img src="roupas1.jpg" alt="Roupa Personalizada">
