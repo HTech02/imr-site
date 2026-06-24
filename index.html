@@ -125,6 +125,10 @@ padding:25px;
 border:1px solid #7b2cff;
 border-radius:15px;
 transition:.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card:hover{
@@ -141,7 +145,16 @@ color:#c67cff;
 font-size:.95rem;
 color:#ccc;
 }
+<section>
 
+<h2 class="titulo">Atendimento</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Atendemos Garibaldi, Bento Gonçalves, Carlos Barbosa,
+Farroupilha e toda a Serra Gaúcha.
+</p>
+
+</section>
 .contato{
 text-align:center;
 }
@@ -164,10 +177,18 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:18px;
-border-radius:50%;
-font-size:24px;
+padding:15px 22px;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
 text-decoration:none;
+box-shadow:0 0 20px rgba(37,211,102,.5);
+transition:.3s;
+z-index:9999;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
 }
   .estatisticas{
 display:flex;
@@ -232,9 +253,9 @@ font-size:1.5rem;
 
 <header>
 
-<div class="logo">
-<img src="logo.png" alt="I.M.R" style="height:50px;">
-</div>
+<a href="#" class="logo">
+<img src="logo.png" alt="I.M.R" style="height:75px;">
+</a>
 
 <nav>
 <a href="#servicos">Serviços</a>
@@ -248,12 +269,14 @@ font-size:1.5rem;
 
 <img src="logo.png" alt="Logo I.M.R">
 
-<h1>Personalize, divulgue e se destaque</h1>
+<h1>
+Comunicação Visual que Faz sua Marca Aparecer
+</h1>
 
 <p>
-Comunicação visual completa para empresas,
-eventos e marcas. Adesivos, banners, fachadas,
-cartões de visita, brindes personalizados e muito mais.
+Adesivos, banners, cartões de visita, lonas,
+fachadas e materiais personalizados para destacar
+sua empresa e atrair mais clientes.
 </p>
 
 <a class="btn"
@@ -265,17 +288,17 @@ Solicitar Orçamento
 
 <div>
 <h2>+30</h2>
-<p>Serviços</p>
+<p>Produtos Personalizados</p>
 </div>
 
 <div>
 <h2>100%</h2>
-<p>Personalizado</p>
+<p>Arte Exclusiva</p>
 </div>
 
 <div>
 <h2>10-15</h2>
-<p>Dias Úteis</p>
+<p>Dias de Produção</p>
 </div>
 
 </div>
@@ -349,10 +372,11 @@ Solicitar Orçamento
 <h2 class="titulo">Sobre a I.M.R</h2>
 
 <p style="text-align:center; max-width:900px; margin:auto;">
-A I.M.R Comunicação Visual oferece soluções completas em
-impressão, brindes personalizados, fachadas, adesivos,
-placas, banners, cartões de visita e divulgação em geral,
-transformando ideias em materiais profissionais de alta qualidade.
+A I.M.R Comunicação Visual atua na Serra Gaúcha oferecendo
+soluções completas em impressão e comunicação visual.
+Produzimos adesivos, cartões de visita, banners, lonas,
+fachadas e materiais personalizados para empresas,
+eventos e profissionais que desejam destacar sua marca.
 </p>
 
 </section>
@@ -388,10 +412,10 @@ Chamar no WhatsApp
 
 </footer>
 
-<a class="btn"
+<a class="whatsapp"
 href="https://wa.me/5551991516776"
 target="_blank">
-💬
+💬 WhatsApp
 </a>
 
 </body>
