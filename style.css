@@ -25,6 +25,7 @@ color:#222;
 }
 header{
 position:fixed;
+position:relative;
 width:100%;
 top:0;
 z-index:1000;
@@ -32,9 +33,20 @@ background:rgba(255,255,255,.95);
 backdrop-filter:blur(10px);
 padding:15px 8%;
 display:flex;
-justify-content:space-between;
+justify-content:flex-start;
 align-items:center;
+gap:15px;
 border-bottom:1px solid #7b2cff;
+}
+
+.menu-btn{
+display:none;
+background:none;
+border:none;
+font-size:34px;
+color:#7b2cff;
+cursor:pointer;
+margin-left:auto;
 }
 
 .logo{
@@ -309,6 +321,10 @@ cursor:pointer;
 grid-template-columns:1fr;
 }
 
+.menu-btn{
+display:block !important;
+}
+
 .galeria{
 grid-template-columns:1fr;
 }
@@ -346,6 +362,27 @@ width:180px;
 
 nav{
 display:none;
+flex-direction:column;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:white;
+padding:20px 0;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+nav.ativo{
+display:flex;
+}
+
+nav a{
+margin:12px 0;
+text-align:center;
+}
+
+.menu-btn{
+display:block;
 }
 
 .estatisticas{

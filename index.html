@@ -19,7 +19,11 @@
 <img src="logo.png" alt="I.M.R" style="height:75px;">
 </a>
 
-<nav>
+<button class="menu-btn" id="menu-btn">
+☰
+</button>
+
+<nav id="menu">
 <a href="#servicos">Serviços</a>
 <a href="#galeria">Trabalhos</a>
 <a href="#sobre">Sobre</a>
@@ -68,6 +72,9 @@ Atendimento em todo o Brasil • Arte personalizada • Produção profissional
 </div>
 
 </div>
+
+</section>
+
 <section id="servicos">
 
 <h2 class="titulo">Principais Serviços</h2>
@@ -76,11 +83,21 @@ Atendimento em todo o Brasil • Arte personalizada • Produção profissional
 
 <div class="grid">
 
+<a href="#automotivos" class="card-link">
+
 <div class="card">
+
 <img src="automotivos.jpg" alt="Adesivos Automotivos">
+
 <h3>Adesivos Automotivos</h3>
-<p>Personalização profissional para carros, motos e veículos comerciais.</p>
+
+<p>
+Personalização profissional para carros, motos e veículos comerciais.
+</p>
+
 </div>
+
+</a>
 
 <a href="#panfletos" class="card-link">
 <div class="card">
@@ -114,18 +131,27 @@ Atendimento em todo o Brasil • Arte personalizada • Produção profissional
 </div>
 </a>
 
+<a href="#vinil" class="card-link">
+
 <div class="card">
+
 <img src="adesivos-vinil.jpg" alt="Adesivos Vinil">
+
 <h3>Adesivos Vinil</h3>
-<p>Personalizados para empresas, marcas e eventos.</p>
-</div>
+
+<p>
+Personalizados para empresas, marcas e eventos.
+</p>
 
 </div>
+
+</a>
 
 <hr class="divisoria">
 
 <h3 class="subtitulo">
 Brindes Personalizados
+</h3>
 
 <div class="grid">
 
@@ -183,6 +209,26 @@ Solicite seu orçamento e receba atendimento rápido pelo WhatsApp.
   <section id="galeria">
 
 <h2 class="titulo">Trabalhos Realizados</h2>
+
+<h3 id="automotivos" class="subtitulo">
+Portfólio - Adesivos Automotivos
+</h3>
+
+<div class="galeria">
+
+<!-- Em breve serão adicionadas as imagens -->
+
+</div>
+
+<h3 id="vinil" class="subtitulo">
+Portfólio - Adesivos Vinil
+</h3>
+
+<div class="galeria">
+
+<!-- Em breve serão adicionadas as imagens -->
+
+</div>
 
 <h3 id="cartoes" class="subtitulo">
 Portfólio - Cartões de Visita
@@ -313,28 +359,8 @@ href="https://wa.me/5551991516776"
 target="_blank">
 💬 WhatsApp
 </a>
-<script>
 
-const lightbox=document.getElementById("lightbox");
-const imagem=document.getElementById("imagem-lightbox");
+<script src="script.js"></script>
 
-document.querySelectorAll(".galeria img").forEach(img=>{
-
-img.onclick=()=>{
-
-lightbox.style.display="flex";
-imagem.src=img.src;
-
-}
-
-});
-
-lightbox.onclick=()=>{
-
-lightbox.style.display="none";
-
-}
-
-</script>
 </body>
 </html>
