@@ -9,7 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
+.divisoria{
+border:none;
+height:1px;
+background:linear-gradient(to right,
+transparent,
+#7b2cff,
+transparent);
+margin:70px auto;
+width:80%;
+}
 *{
 margin:0;
 padding:0;
@@ -307,7 +316,37 @@ color:white;
 cursor:pointer;
 }
   @media (max-width:768px){
+.grid{
+grid-template-columns:1fr;
+}
 
+.galeria{
+grid-template-columns:1fr;
+}
+
+.card{
+padding:18px;
+}
+
+.titulo{
+font-size:1.9rem;
+}
+
+.subtitulo{
+font-size:1.2rem;
+padding:10px 20px;
+}
+
+.hero{
+padding:140px 20px 80px;
+}
+
+.whatsapp{
+right:15px;
+bottom:15px;
+padding:12px 18px;
+font-size:16px;
+}
 .hero h1{
 font-size:2rem;
 }
@@ -655,16 +694,7 @@ lightbox.onclick=()=>{
 lightbox.style.display="none";
 
 }
-.divisoria{
-border:none;
-height:1px;
-background:linear-gradient(to right,
-transparent,
-#7b2cff,
-transparent);
-margin:70px auto;
-width:80%;
-}
+
 </script>
 </body>
 </html>
