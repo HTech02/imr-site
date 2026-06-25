@@ -144,10 +144,15 @@ display:flex;
 align-items:center;
 }
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px rgba(123,44,255,.5);
-}
 
+transform:translateY(-10px) scale(1.02);
+
+box-shadow:
+0 20px 40px rgba(123,44,255,.25);
+
+border-color:#9d55ff;
+
+}
 .card h3{
 margin-bottom:10px;
 color:#c67cff;
@@ -255,11 +260,23 @@ transform:scale(1.03);
 box-shadow:0 0 25px rgba(123,44,255,.6);
 }
  .subtitulo{
-text-align:center;
-margin:50px 0 25px;
-font-size:1.8rem;
-color:#7b2cff;
+display:inline-block;
+background:#7b2cff;
+color:white;
+padding:12px 28px;
+border-radius:40px;
+font-size:1.5rem;
+margin:60px auto 35px;
+box-shadow:0 10px 25px rgba(123,44,255,.25);
+}
+
+.subtitulo{
 scroll-margin-top:120px;
+}
+
+#servicos .subtitulo,
+#galeria .subtitulo{
+display:table;
 }
 .lightbox{
 display:none;
@@ -426,7 +443,10 @@ Atendimento em todo o Brasil • Arte personalizada • Produção profissional
 
 </div>
 
-<h3 class="subtitulo">Brindes Personalizados</h3>
+<hr class="divisoria">
+
+<h3 class="subtitulo">
+Brindes Personalizados
 
 <div class="grid">
 
@@ -635,7 +655,16 @@ lightbox.onclick=()=>{
 lightbox.style.display="none";
 
 }
-
+.divisoria{
+border:none;
+height:1px;
+background:linear-gradient(to right,
+transparent,
+#7b2cff,
+transparent);
+margin:70px auto;
+width:80%;
+}
 </script>
 </body>
 </html>
