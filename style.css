@@ -20,9 +20,18 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#ffffff;
-color:#222;
+    background:
+        linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)),
+        url("artes/arte-fundo1.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+
+    color:#222;
 }
+
 header{
 position:fixed;
 width:100%;
@@ -66,20 +75,41 @@ color:#c67cff;
 }
 
 .hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:100px 20px;
-background:
-linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.80)),
-url("hero/hero1.jpg");
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+
+    max-width:1300px;
+    margin:auto;
+
+    padding:140px 30px 80px;
+
+    position:relative;
+    z-index:1;
+}
+
+.hero-texto{
+    flex:1;
+}.hero-imagem{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+}.hero-imagem img{
+
+    width:100%;
+    max-width:520px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(123,44,255,.20);
+
+}
 
 background-size:cover;
 background-position:center;
-}
+
 
 .hero img{
 width:260px;
@@ -214,23 +244,38 @@ z-index:9999;
 .whatsapp:hover{
 transform:scale(1.05);
 }
-  .estatisticas{
-display:flex;
-gap:50px;
-margin-top:40px;
-flex-wrap:wrap;
-justify-content:center;
+.estatisticas{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+
 }
 
 .estatisticas h2{
-color:#c67cff;
-font-size:2rem;
+    color:#7b2cff;
+    font-size:2.2rem;
+    font-weight:700;
 }
 
 .estatisticas p{
-margin-top:5px;
-color:#e0e0e0;
+    margin-top:5px;
+    color:#333;
+    font-weight:500;
 }
+.estatisticas div{
+    background:rgba(255,255,255,.90);
+    padding:18px 28px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
 .card img{
 width:100%;
 aspect-ratio:1/1;
@@ -315,6 +360,83 @@ font-size:45px;
 color:white;
 cursor:pointer;
 }
+
+.descricao-servicos{
+
+max-width:900px;
+
+margin:0 auto 50px;
+
+text-align:center;
+
+font-size:1.05rem;
+
+color:#555;
+
+}
+
+.grid-servicos{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+.card-servico{
+
+background:#fff;
+
+border:1px solid #7b2cff;
+
+border-radius:18px;
+
+padding:25px;
+
+transition:.3s;
+
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+.card-servico:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 10px 25px rgba(123,44,255,.18);
+
+}
+
+.card-servico h3{
+
+color:#7b2cff;
+
+margin-bottom:20px;
+
+font-size:1.4rem;
+
+}
+
+.card-servico ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.card-servico li{
+
+margin:10px 0;
+
+color:#444;
+
+font-size:.96rem;
+
+}
+
   @media (max-width:768px){
 .grid{
 grid-template-columns:1fr;
@@ -390,6 +512,26 @@ gap:25px;
 
 .estatisticas h2{
 font-size:1.5rem;
+}
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-imagem{
+
+    order:2;
+
+}
+
+.hero-texto{
+
+    order:1;
+
 }
 
 }
